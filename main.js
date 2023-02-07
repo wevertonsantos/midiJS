@@ -1,3 +1,5 @@
+// function play sound
+
 function playSoundPom(){
 	document.querySelector('#som_tecla_pom').play()
 }
@@ -6,6 +8,16 @@ function playSoundPom(){
 
 const listKeys = document.querySelectorAll('.tecla');
 
-// function
+// counter for while
 
-listKeys[0].onclick = playSoundPom;
+	let i = 0;
+
+// while
+
+while (i < listKeys.length) {
+
+	listKeys[i].onclick = playSoundPom;
+
+	i = i + 1;
+	console.log(i)
+}
