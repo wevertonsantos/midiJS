@@ -1,7 +1,7 @@
 // function play sound
 
-function playSoundPom(){
-	document.querySelector('#som_tecla_pom').play()
+function playSound(idElementAudio){
+	document.querySelector(idElementAudio).play();
 }
 
 // list
@@ -16,8 +16,20 @@ const listKeys = document.querySelectorAll('.tecla');
 
 while (i < listKeys.length) {
 
-	listKeys[i].onclick = playSoundPom;
+	// constants
+
+	const keys = listKeys[i];
+	const instrumental = keys.classList[1];
+
+	// idAudio (template string)
+
+	const idAudio = `#som_${instrumental}`;
+
+	// function for outside sound
+
+	keys.onclick = function (){
+		playSound(idAudio)
+	};
 
 	i = i + 1;
-	console.log(i)
 }
