@@ -15,7 +15,7 @@ Codes utilized on project
   <li>Counter - let i = 0</li>
   <li>Counter - i++</li>
   <li>.length: for acess a list of elements</li>
-  <li>Template string: ${}<li>
+  <li>Template string: ${}</li>
   <li>Add and remove: classList.add(), classList.remove()</li>
   <li>onkeydown and onkeyup</li>
   <li>Operator logic: AND(&&), OR(||), DIFERENT OF(!=), (=), (==), (===)</li>
