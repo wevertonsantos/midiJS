@@ -21,10 +21,20 @@ for (let i = 0; i < listKeys.length; i++) {
 
 	const idAudio = `#som_${instrumental}`;
 
-	// function for outside sound
+	// event and function for outside sound
 
 	keys.onclick = function (){
-		playSound(idAudio)
-	};
+		// playSound(idAudio)
+		document.querySelector(idAudio).play();
+	}
 
+	// key on down and key on up
+
+	keys.onkeydown = function(){
+		keys.classList.add('ativa');
+	}
+
+	keys.onkeyup = function(){
+		keys.classList.remove('ativa')
+	}
 }
