@@ -30,11 +30,15 @@ for (let i = 0; i < listKeys.length; i++) {
 
 	// key on down and key on up
 
-	keys.onkeydown = function(){
-		keys.classList.add('ativa');
+	keys.onkeydown = function(evento){
+		
+		if(evento.code === 'Space' || evento.code === 'Enter'){
+			keys.classList.add('ativa');
+		}
+	
 	}
 
 	keys.onkeyup = function(){
-		keys.classList.remove('ativa')
-	}
+			keys.classList.remove('ativa')
+		}
 }
