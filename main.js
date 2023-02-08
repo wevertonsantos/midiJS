@@ -8,13 +8,9 @@ function playSound(idElementAudio){
 
 const listKeys = document.querySelectorAll('.tecla');
 
-// counter for while
+// for
 
-	let i = 0;
-
-// while
-
-while (i < listKeys.length) {
+for (let i = 0; i < listKeys.length; i++) {
 
 	// constants
 
@@ -31,5 +27,4 @@ while (i < listKeys.length) {
 		playSound(idAudio)
 	};
 
-	i = i + 1;
 }
